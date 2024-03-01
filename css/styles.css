@@ -140,3 +140,23 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     YOUR STYLES
     Add your styles below.
     ========================== */
+
+    /* HOME PAGE LAYOUT */
+    .grid-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+
+      @media (min-width: 600px) {
+        .grid-images {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .grid-images {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
