@@ -17,42 +17,76 @@
   <meta property="og:image" content="">
 
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body class="home">
     <header>
-        <nav>
-            <p class="siteTitle">Chris Stein's Portoflio</p>
-          <ul>
-            <li><a href="work.html">work</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
+        <nav class="site-nav">
+          <div class="site-title">
+            <a href="/">Chris Stein's Portoflio</a>
+          </div>
+          <a href="#" class="hamburger" id="nav-toggle"><span></span></a>
+          <div class="links" id="nav-links">
+            <a href="/">work</a>
+            <a href="about.html">about</a>
+          </div>
         </nav>
       </header>
       
       <main>
-        <h1>The Home Page</h1>
-        <h2>Projects</h2>
-        <section class="grid-images">
-          <div class="item">
-            <div class="image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" />
+
+        <h1>Chris Stein's Portfolio</h1>
+        <div class="intro">
+          <p>Welcome! I am a professor, front end developer and amateur photographer.</p>
         </div>
-            <p>lorem ipsum descriptum</p>
+
+        <section class="projects card-container">
+        <h2 class="project-title">My Work</h2>
+          <div class="project card">
+            <div class="project-image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" />
+        </div>
+            <h3 class="project-title">Poster Project</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/poster.html">View Project</a>
+            </p>
           </div>
-          <div class="item">
-            <div class="image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" /></div>
-            <p>lorem ipsum descriptum</p>
+          <div class="project card">
+            <div class="project-image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" /></div>
+            <h3 class="project-title">Web Site</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/web.html">View Project</a>
+            </p>
           </div>
-          <div class="item">
-            <div class="image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" /></div>
-            <p>lorem ipsum descriptum</p>
+          <div class="project card ">
+            <div class="project-image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" /></div>
+            <h3 class="project-title">Creative Coding</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/creative-coding.html">View Project</a>
+            </p>
+          </div>
+          <div class="project card">
+            <div class="project-image"><img src="https://unsplash.it/250/250" alt="Placeholder Image" /></div>
+            <h3 class="project-title">Photo Editing</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/photo-edit.html">View Project</a>
+            </p>
           </div>
         </section>
       </main>
       
-      <footer>
-        <!-- your site footer content here... -->
+        <footer>
+          <div class="footer-text">
+              © 2024 Copyright: Christopher Stein
+              <a class="social-link" href="https://www.instagram.com/your_instagram_username">
+                  <img src="instagram_icon.png" alt="Instagram Icon" width="20" height="20">
+              </a>
+          </div>
       </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
