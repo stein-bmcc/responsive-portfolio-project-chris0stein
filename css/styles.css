@@ -142,7 +142,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     ========================== */
 
     /* HOME PAGE LAYOUT */
-    .grid-images {
+    /* .home .projects {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -150,13 +150,49 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
       }
 
       @media (min-width: 600px) {
-        .grid-images {
+        .home .projects {
           grid-template-columns: repeat(2, 1fr);
         }
       }
 
       @media (min-width: 900px) {
-        .grid-images {
+        .home .projects {
           grid-template-columns: repeat(3, 1fr);
         }
+      } */
+
+
+      /* HOME layout cards
+       */
+
+       .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px; /* Spacing between cards */
+        padding: 20px; /* Padding around the grid */
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .card-image {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 5px; /* 5px rounded corners */
+        border-top-right-radius: 5px; /* 5px rounded corners */
+      }
+      
+      .card-title, .card-description {
+        padding: 2px 16px;
+      }
+      
+      .project-title{
+        grid-column: 1/-1;
       }
