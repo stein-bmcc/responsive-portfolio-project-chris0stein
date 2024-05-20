@@ -140,3 +140,71 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     YOUR STYLES
     Add your styles below.
     ========================== */
+
+    /* HOME PAGE LAYOUT */
+    /* .home .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+
+      @media (min-width: 600px) {
+        .home .projects {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .home .projects {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      } */
+
+
+      /* HOME layout cards
+       */
+
+       .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px; /* Spacing between cards */
+        padding: 20px; /* Padding around the grid */
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .card-image {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 5px; /* 5px rounded corners */
+        border-top-right-radius: 5px; /* 5px rounded corners */
+      }
+      
+      .card-title, .card-description {
+        padding: 2px 16px;
+      }
+      
+      .project-title{
+        grid-column: 1/-1;
+      }
+
+      .welcome{
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+  .photo-grid{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+  }

@@ -1,9 +1,10 @@
+
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Chris Stein Portfolio: home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="">
@@ -15,28 +16,80 @@
   <meta property="og:description" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body class="home">
     <header>
-        <nav>
-            <h1>Site Title</h1>
-          <ul>
-            <li>nav Item 1</li>
-            <li>nav Item 2</li>
-            <li>nav Item 3</li>
-          </ul>
+        <nav class="site-nav">
+          <div class="site-title">
+            <a href="/">Chris Stein's Portoflio</a>
+          </div>
+          <a href="#" class="hamburger" id="nav-toggle"><span></span></a>
+          <div class="links" id="nav-links">
+            <a href="/">work</a>
+            <a href="about.html">about</a>
+          </div>
         </nav>
       </header>
       
       <main>
-        <!-- your page content here... -->
+
+        <div class="welcome">
+          <h1>Chris Stein's Portfolio</h1>
+          <div class="intro">
+            <p>Welcome! I am a professor, front end developer and amateur photographer.</p>
+          </div>
+          <div class="img"><img src="/images/chris-stein-headshot-500x500.jpg" alt=""></div>
+        </div>
+
+        <section class="projects card-container">
+        <h2 class="project-title">My Work</h2>
+          <div class="project card">
+            <div class="project-image"><img src="images/poster.png" alt="Placeholder Image" />
+        </div>
+            <h3 class="project-title">Poster Project</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/poster.html">View Project</a>
+            </p>
+          </div>
+          <div class="project card">
+            <div class="project-image"><img src="images/website.png" alt="atet"></div>
+            <h3 class="project-title">Web Site</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/web.html">View Project</a>
+            </p>
+          </div>
+          <div class="project card ">
+            <div class="project-image"><img src="images/creativecoding.png" alt=""></div>
+            <h3 class="project-title">Creative Coding</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/creative-coding.html">View Project</a>
+            </p>
+          </div>
+          <div class="project card">
+            <div class="project-image"><img src="images/IMG_1324.jpg" alt="alt text"></div>
+            <h3 class="project-title">Photo Editing</h3>
+            <p class="project-description">This is a description for the project. It offers more insight and detail.</p>
+            <p class="project-link">
+              <a href="/photo-edit.html">View Project</a>
+            </p>
+          </div>
+        </section>
       </main>
       
-      <footer>
-        <!-- your site footer content here... -->
+      <footer class="site-footer">
+        <div class="footer-text">
+            © 2024 Copyright: Christopher Stein
+            <a class="social-link" href="https://www.instagram.com/your_instagram_username">
+                <img src="/images/instagram_icon.png" alt="Instagram Icon" width="20" height="20">
+            </a>
+        </div>
       </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
